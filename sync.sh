@@ -29,6 +29,9 @@ fi
 if [ `grep -c "package/lean/luci-app-adbyby-plus" .git/info/sparse-checkout` -eq 0 ]; then
     echo "package/lean/luci-app-adbyby-plus" >> .git/info/sparse-checkout
 fi
+if [ `grep -c "package/lean/luci-app-filetransfer" .git/info/sparse-checkout` -eq 0 ]; then
+    echo "package/lean/luci-app-filetransfer" >> .git/info/sparse-checkout
+fi
 git pull --depth 1 origin master
 
 ############################################################################################
