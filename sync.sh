@@ -40,6 +40,9 @@ fi
 if [ -d $project_root_path/luci-app-adbyby-plus ]; then
     rm -rf $project_root_path/luci-app-adbyby-plus
 fi
+if [ -d $project_root_path/luci-app-filetransfer ]; then
+    rm -rf $project_root_path/luci-app-filetransfer
+fi
 cp -R $tmp_path/lean/package/lean/ $project_root_path/
 
 # 提交
